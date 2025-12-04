@@ -4,7 +4,7 @@ export const Projects = () => {
     const projects = [
         { 
             title: "Indonesian App Review Analyzer", 
-            subtitle: "Shopee Case Study",
+            subtitle: "ShopeeID Case Study",
             desc: "Architected a robust data pipeline to scrape and analyze 20,000+ noisy user reviews. Transforms colloquial text into structured datasets for In-House LLM preparation.", 
             tech: ["Python", "Streamlit", "Pandas", "NLP"],
             icon: <MessageSquare size={28} className="text-orange-500" />,

@@ -1,4 +1,4 @@
-import { Code, Brain, GraduationCap, Terminal, Cpu, BarChart3, Server } from 'lucide-react';
+import { Code, Brain, GraduationCap, Terminal, Cpu, BarChart3, Server, ExternalLink } from 'lucide-react';
 
 export const About = () => {
     return (
@@ -36,25 +36,38 @@ export const About = () => {
                         <div>
                             <h3 className="flex items-center text-xl font-bold text-blue-950 mb-6">
                                 <GraduationCap className="w-6 h-6 mr-2 text-blue-600" />
-                                Pendidikan
+                                Education
                             </h3>
                             <div className="space-y-4">
                                 {/* bangkit card */}
-                                <div className="relative overflow-hidden bg-white p-6 rounded-xl border-l-4 border-red-500 shadow-md group hover:shadow-lg transition-all">
-                                    <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <a 
+                                    href="https://www.linkedin.com/in/ainiazzah/overlay/1743870519145/single-media-viewer/?profileId=ACoAAErj_uQBGcaNwBrurJID5SIjzsC9JLCtjik"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block relative overflow-hidden bg-white p-6 rounded-xl border-l-4 border-red-500 shadow-md group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                                >
+                                    <div className="absolute top-4 right-4 z-20">
+                                        <ExternalLink size={20} className="text-slate-300 group-hover:text-red-500 transition-colors duration-300" />
+                                    </div>
+
+                                    <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
                                         <Brain size={80} className="text-red-500" />
                                     </div>
-                                    <div className="flex justify-between items-start mb-2">
+
+                                    <div className="flex justify-between items-start mb-2 relative z-10">
                                         <div>
-                                            <h4 className="font-bold text-gray-900 text-lg">Bangkit Academy led by Google, GoTo, & Traveloka</h4>
+                                            <h4 className="font-bold text-gray-900 text-lg group-hover:text-red-600 transition-colors">
+                                                Bangkit Academy led by Google, GoTo, & Traveloka
+                                            </h4>
                                             <p className="text-red-600 font-medium text-sm">Machine Learning Cohort</p>
                                         </div>
-                                        <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-1 rounded">Distinction</span>
+                                        {/* <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-1 rounded ml-2">Distinction</span> */}
                                     </div>
-                                    <p className="text-slate-600 text-sm mt-3 leading-relaxed">
-                                        Selected for an intensive Machine Learning curriculum. Mastered TensorFlow, Deep Learning concepts, and successfully delivered an AI-based Capstone Project with distinction.
+
+                                    <p className="text-slate-600 text-sm mt-3 leading-relaxed relative z-10">
+                                        Selected for an intensive Machine Learning curriculum. Mastered TensorFlow, Deep Learning concepts, and successfully delivered an AI-based Capstone Project.
                                     </p>
-                                </div>
+                                </a>
 
                                 {/* uni card */}
                                 <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:border-blue-200 transition-colors">

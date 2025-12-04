@@ -29,9 +29,9 @@ function App() {
         <Certificates />
         <Contact />
         
-        {/* Footer Sederhana */}
+        {/* simple footer */}
         <footer className="py-6 bg-slate-50 border-t border-slate-200 text-center text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} Dani Portfolio. All rights reserved.
+            &copy; {new Date().getFullYear()} aini's Portfolio. All rights reserved.
         </footer>
       </div>
     </>
